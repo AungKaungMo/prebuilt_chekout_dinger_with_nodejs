@@ -11,7 +11,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 app.use("/user", userRoute);
-app.use("/dinger", dingerRoute);
+app.use("/dinger", dingerRoute );
 
 app.use((req, res, next) => {
     const err = new Error(`${req.url} not found.`);
